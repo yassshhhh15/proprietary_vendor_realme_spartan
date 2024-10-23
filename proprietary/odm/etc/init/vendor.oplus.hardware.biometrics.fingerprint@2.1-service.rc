@@ -5,6 +5,7 @@ service fps_hal /odm/bin/hw/vendor.oplus.hardware.biometrics.fingerprint@2.1-ser
     class late_start
     user system
     group system input uhid
+    task_profiles ProcessCapacityHigh MaxPerformance
 
 service oplus_fingerprints_sh /vendor/bin/sh /odm/bin/init.oplus.fingerprints.sh
     class main
